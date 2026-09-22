@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoNudge · Support · Simple Reminder App</title>
+  <meta name="description" content="MemoNudge is a simple, private reminder app. Create one-time, daily, weekly, monthly, or yearly reminders with customizable snooze. Free version available. Premium upgrade for unlimited reminders." />
+  <meta name="keywords" content="reminder, alarm, notification, schedule, productivity, iOS app, MemoNudge" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://jinh14050.github.io/MemoNudge/MemoNudge-support.html" />
+  <meta property="og:title" content="MemoNudge - Never miss a moment" />
+  <meta property="og:description" content="Simple, private reminder app. One-time, daily, weekly, monthly, yearly reminders with customizable snooze." />
+  <meta property="og:url" content="https://jinh14050.github.io/MemoNudge/MemoNudge-support.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MemoNudge - Never miss a moment" />
+  <meta name="twitter:description" content="Simple, private reminder app. One-time, daily, weekly, monthly, yearly reminders with customizable snooze." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#f7f6ff;--card:#ffffff;--fg:#1e1b3a;--muted:#6f6d8a;--primary:#6C63FF;--accent:#A78BFA;--border:rgba(108,99,255,0.12);--serif:'Playfair Display',Georgia,serif;--sans:'Nunito','PingFang SC','Noto Sans SC',sans-serif}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{text-decoration:none;transition:opacity .2s}
+    a:hover{opacity:.7}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:transparent}
+    ::-webkit-scrollbar-thumb{background:rgba(108,99,255,.25);border-radius:3px}
+    nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 40px;background:rgba(247,246,255,.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+    .nav-brand{display:flex;align-items:center;gap:10px}
+    .nav-brand-name{font-family:var(--serif);font-size:1.15rem;color:var(--fg)}
+    .nav-contact{display:flex;align-items:center;gap:6px;color:var(--primary);font-size:.875rem}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(155deg,#fbfaff 0%,#f0edff 35%,#eef0ff 70%,#f7f5ff 100%);padding:80px 40px 96px}
+    .hero-blob-1{position:absolute;top:-60px;right:-80px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(167,139,250,.16) 0%,transparent 70%);pointer-events:none}
+    .hero-blob-2{position:absolute;bottom:-40px;left:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(108,99,255,.12) 0%,transparent 70%);pointer-events:none}
+    .hero-inner{position:relative;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px}
+    .hero-left{display:flex;flex-direction:column;gap:22px}
+    .hero-badge{display:flex;align-items:center;gap:10px}
+    .hero-badge-sub{font-family:var(--serif);font-style:italic;font-size:.85rem;color:var(--primary);letter-spacing:.08em}
+    h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.5rem);line-height:1.18;letter-spacing:-.02em;color:var(--fg)}
+    .h1-grad{background:linear-gradient(135deg,#6C63FF,#A78BFA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-desc{color:var(--muted);font-size:1.05rem;line-height:1.75;max-width:420px}
+    .pills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--border);font-size:.8rem;color:var(--muted);backdrop-filter:blur(8px)}
+    .hero-ctas{display:flex;align-items:center;gap:14px;margin-top:6px}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:16px;background:linear-gradient(135deg,#6C63FF,#A78BFA);color:#fff;font-size:.875rem;box-shadow:0 8px 24px rgba(108,99,255,.3);transition:transform .2s,box-shadow .2s}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(108,99,255,.35);opacity:1}
+    .btn-secondary{display:inline-flex;align-items:center;gap:6px;padding:14px 22px;border-radius:16px;background:rgba(255,255,255,.65);border:1.5px solid var(--border);color:var(--fg);font-size:.875rem;backdrop-filter:blur(8px);transition:transform .2s}
+    .btn-secondary:hover{transform:translateY(-2px);opacity:1}
+    .hero-right{position:relative}
+    .hero-illus-wrap{position:relative;border-radius:32px;box-shadow:0 24px 64px rgba(108,99,255,.14),0 8px 24px rgba(0,0,0,.06)}
+    .hero-illus-wrap svg{width:100%;height:auto;display:block}
+    .float-badge{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:16px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px)}
+    .float-badge-1{bottom:-16px;left:-20px;box-shadow:0 8px 24px rgba(108,99,255,.18);border:1px solid rgba(108,99,255,.15);animation:float1 3.5s ease-in-out infinite}
+    .float-badge-2{top:-14px;right:-14px;box-shadow:0 8px 24px rgba(167,139,250,.18);border:1px solid rgba(167,139,250,.15);animation:float2 4s ease-in-out infinite}
+    .fb-title{font-family:var(--serif);font-size:.75rem;color:var(--fg)}
+    .fb-sub{font-size:.68rem;color:var(--primary);margin-top:1px}
+    @keyframes float1{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    .how{padding:96px 40px;background:var(--bg)}
+    .how-inner{max-width:1100px;margin:0 auto}
+    .section-eyebrow{font-family:var(--serif);font-style:italic;color:var(--primary);font-size:.85rem;letter-spacing:.1em;text-align:center;display:block;margin-bottom:10px}
+    h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.7rem);text-align:center;line-height:1.25;letter-spacing:-.02em;margin-bottom:24px}
+    .divider{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:60px}
+    .divider-line{height:1px;width:64px;background:var(--border)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+    .card{position:relative;display:flex;flex-direction:column;overflow:hidden;border-radius:28px;background:var(--card);border:1.5px solid var(--border);box-shadow:0 4px 20px rgba(30,27,58,.06),0 1px 4px rgba(30,27,58,.04);transition:transform .38s cubic-bezier(.22,1,.36,1),box-shadow .38s cubic-bezier(.22,1,.36,1),border-color .38s}
+    .card:hover{transform:translateY(-6px)}
+    .card[data-color="violet"]:hover{box-shadow:0 20px 52px rgba(108,99,255,.2),0 6px 18px rgba(0,0,0,.06);border-color:rgba(108,99,255,.35)}
+    .card[data-color="lavender"]:hover{box-shadow:0 20px 52px rgba(167,139,250,.2),0 6px 18px rgba(0,0,0,.06);border-color:rgba(167,139,250,.35)}
+    .card[data-color="indigo"]:hover{box-shadow:0 20px 52px rgba(139,133,255,.2),0 6px 18px rgba(0,0,0,.06);border-color:rgba(139,133,255,.35)}
+    .card-img{position:relative;height:200px;overflow:hidden}
+    .card-img img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.22,1,.36,1)}
+    .card:hover .card-img img{transform:scale(1.05)}
+    .card-img-overlay{position:absolute;inset:0}
+    .step-chip{position:absolute;top:14px;left:14px;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);box-shadow:0 2px 10px rgba(0,0,0,.1);font-family:var(--serif);font-style:italic;font-size:.78rem}
+    .card-body{padding:28px;display:flex;flex-direction:column;gap:14px;flex:1}
+    .card-header{display:flex;align-items:center;gap:12px}
+    .card-icon{width:40px;height:40px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .card-title{font-family:var(--serif);font-size:1.1rem;line-height:1.3}
+    .card-title-en{font-size:.72rem;letter-spacing:.06em;margin-top:2px}
+    .card-desc{font-size:.9rem;line-height:1.72;color:var(--muted)}
+    .card-accent-line{position:absolute;bottom:0;left:0;right:0;height:2px;border-radius:0 0 28px 28px;opacity:0;transition:opacity .3s}
+    .card:hover .card-accent-line{opacity:1}
+    .quote-band{padding:80px 40px;text-align:center;background:linear-gradient(135deg,#f0edff 0%,#f3f0ff 50%,#faf8ff 100%);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    blockquote{font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.5;letter-spacing:-.01em;max-width:640px;margin:0 auto 20px}
+    .quote-attr{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--serif);font-style:italic;color:var(--primary);font-size:.9rem}
+    footer{padding:64px 40px;background:var(--bg)}
+    .footer-inner{max-width:1100px;margin:0 auto}
+    .footer-top{display: flex; justify-content: space-between; padding-bottom:48px;border-bottom:1px solid var(--border);margin-bottom:32px}
+    .footer-brand{display:flex;flex-direction:column;gap:16px}
+    .footer-brand-row{display:flex;align-items:center;gap:10px}
+    .footer-brand-name{font-family:var(--serif);font-size:1.2rem}
+    .footer-brand-desc{color:var(--muted);font-size:.875rem;line-height:1.7;max-width:280px}
+    .footer-email{display:flex;align-items:center;gap:7px;color:var(--primary);font-size:.875rem;width:fit-content}
+    .footer-col h4{font-family:var(--serif);font-size:.95rem;margin-bottom:14px}
+    .footer-col a{display:block;color:var(--muted);font-size:.875rem;margin-bottom:10px}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+    .footer-bottom p{color:var(--muted);font-size:.8rem}
+    .footer-links{display:flex;align-items:center;gap:14px}
+    .footer-links a{color:var(--muted);font-size:.8rem}
+    .footer-links a.accent{color:var(--primary)}
+    .sep{color:var(--border);font-size:1rem}
+    @media(max-width:900px){
+      nav{padding:12px 20px}
+      .hero{padding:56px 20px 72px}
+      .hero-inner{grid-template-columns:1fr;gap:40px}
+      .hero-right{order:-1}
+      .float-badge-1{display:none}
+      .float-badge-2{top:10px;right:10px}
+      .how{padding:64px 20px}
+      .footer-top{grid-template-columns:1fr;gap:32px}
+      footer{padding:48px 20px}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <svg width="34" height="34" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="nav-lg" x1="26" y1="86" x2="76" y2="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6C63FF"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient></defs><rect x="42" y="10" width="16" height="30" rx="7" fill="url(#nav-lg)"/><path d="M22 52 A28 28 0 0 1 78 52 L78 72 Q50 78 22 72 Z" fill="url(#nav-lg)"/><circle cx="50" cy="86" r="8" fill="url(#nav-lg)"/></svg>
+    <span class="nav-brand-name">MemoNudge</span>
+  </div>
+  <a href="mailto:jinh14050@gmail.com" class="nav-contact"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contact Support</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-blob-1"></div><div class="hero-blob-2"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge"><svg width="48" height="48" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="hero-lg" x1="26" y1="86" x2="76" y2="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6C63FF"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient></defs><rect x="42" y="10" width="16" height="30" rx="7" fill="url(#hero-lg)"/><path d="M22 52 A28 28 0 0 1 78 52 L78 72 Q50 78 22 72 Z" fill="url(#hero-lg)"/><circle cx="50" cy="86" r="8" fill="url(#hero-lg)"/></svg><span class="hero-badge-sub">Set. Remind. Done.</span></div>
+      <h1>Never miss<br/><span class="h1-grad">a moment again</span></h1>
+      <p class="hero-desc">MemoNudge is a simple, private reminder app.<br/>Create one-time, daily, weekly, monthly, or yearly reminders — with customizable snooze for whatever life throws at you.</p>
+      <div class="pills"><span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 repeat types</span><span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Customizable snooze</span><span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% local & private</span></div>
+      <div class="hero-ctas"><a href="https://apps.apple.com/app/6812646473" target="_blank" rel="noopener" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>App Store Download</a><a href="mailto:jinh14050@gmail.com" class="btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contact Us</a></div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-illus-wrap">
+        <svg viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg-h" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0edff"/><stop offset="100%" stop-color="#e8e5ff"/></linearGradient>
+            <linearGradient id="primary-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6C63FF"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+            <radialGradient id="glow-c" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6C63FF" stop-opacity="0.18"/><stop offset="100%" stop-color="#6C63FF" stop-opacity="0"/></radialGradient>
+            <filter id="soft-blur"><feGaussianBlur stdDeviation="18"/></filter>
+          </defs>
+          <rect x="30" y="20" width="460" height="380" rx="32" fill="url(#bg-h)"/>
+          <ellipse cx="260" cy="230" rx="160" ry="120" fill="url(#glow-c)" filter="url(#soft-blur)"/>
+
+          <g transform="translate(140,90)">
+            <rect width="240" height="240" rx="28" fill="white" opacity="0.98"/>
+            <g transform="translate(90,35)">
+              <rect x="26" y="0" width="8" height="16" rx="3.5" fill="url(#primary-g)"/>
+              <path d="M12 26 A28 28 0 0 1 48 26 L48 48 Q30 52 12 48 Z" fill="url(#primary-g)"/>
+              <circle cx="30" cy="60" r="5" fill="url(#primary-g)"/>
+            </g>
+            <rect x="55" y="120" width="130" height="8" rx="4" fill="#1e1b3a" opacity="0.85"/>
+            <rect x="70" y="136" width="100" height="6" rx="3" fill="#6f6d8a" opacity="0.45"/>
+            <rect x="35" y="170" width="80" height="34" rx="12" fill="#f0edff"/>
+            <text x="75" y="191" text-anchor="middle" fill="#6C63FF" font-size="12" font-family="sans-serif" font-weight="600">Snooze</text>
+            <rect x="125" y="170" width="80" height="34" rx="12" fill="url(#primary-g)"/>
+            <text x="165" y="191" text-anchor="middle" fill="white" font-size="12" font-family="sans-serif" font-weight="600">Done</text>
+          </g>
+
+          <g transform="translate(45,70) rotate(-8)">
+            <rect width="120" height="72" rx="16" fill="white" opacity="0.94"/>
+            <rect x="14" y="14" width="34" height="6" rx="3" fill="#6C63FF" opacity="0.3"/>
+            <rect x="14" y="26" width="76" height="5" rx="2.5" fill="#1e1b3a" opacity="0.18"/>
+            <text x="14" y="52" fill="#6C63FF" font-size="10" font-family="serif" opacity="0.85" font-style="italic">Daily · 9:00</text>
+          </g>
+
+          <g transform="translate(355,280) rotate(6)">
+            <rect width="130" height="76" rx="16" fill="white" opacity="0.94"/>
+            <rect x="14" y="14" width="40" height="6" rx="3" fill="#A78BFA" opacity="0.4"/>
+            <rect x="14" y="26" width="86" height="5" rx="2.5" fill="#1e1b3a" opacity="0.18"/>
+            <circle cx="22" cy="56" r="6" fill="#A78BFA" opacity="0.25"/>
+            <path d="M19,56 L21,58 L25,53" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <text x="34" y="60" fill="#6f6d8a" font-size="9" font-family="sans-serif">Weekly · Mon</text>
+          </g>
+
+          <path d="M100,55 L101.5,50.5 L106,49 L101.5,47.5 L100,43 L98.5,47.5 L94,49 L98.5,50.5Z" fill="#6C63FF" opacity="0.5"/>
+          <path d="M420,160 L421.5,154.5 L427,153 L421.5,151.5 L420,146 L418.5,151.5 L413,153 L418.5,154.5Z" fill="#A78BFA" opacity="0.5"/>
+          <path d="M90,320 L92,313 L99,311 L92,309 L90,302 L88,309 L81,311 L88,313Z" fill="#6C63FF" opacity="0.45"/>
+        </svg>
+        <div class="float-badge float-badge-1"><span style="font-size:20px">🔔</span><div><p class="fb-title">Reminder delivered</p><p class="fb-sub">Daily standup · 9:00 ✓</p></div></div>
+        <div class="float-badge float-badge-2"><span style="font-size:18px">✨</span><p class="fb-title">3 reminders today</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how-to">
+  <div class="how-inner">
+    <span class="section-eyebrow">How to Use</span>
+    <h2>Three steps to never<br/>miss a moment again</h2>
+    <div class="divider"><div class="divider-line"></div><span style="font-size:1.3rem">🔔</span><div class="divider-line"></div></div>
+    <div class="cards">
+      <div class="card" data-color="violet">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=640&h=400&fit=crop&auto=format" alt="Calendar and planner on a desk" loading="lazy"/><div class="card-img-overlay" style="background:linear-gradient(to bottom,rgba(108,99,255,.22) 0%,rgba(108,99,255,.06) 50%,rgba(247,245,255,.85) 100%)"></div><div class="step-chip" style="color:#6C63FF">Step 01</div></div>
+        <div class="card-body"><div class="card-header"><div class="card-icon" style="background:#f0edff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><div><p class="card-title">Create a Reminder</p><p class="card-title-en" style="color:#6C63FF">Give it a name</p></div></div><p class="card-desc">Tap "+", enter a title, pick a date and time. Optionally add a note. That's it — your reminder is ready to be scheduled.</p></div>
+        <div class="card-accent-line" style="background:linear-gradient(90deg,#6C63FF,rgba(108,99,255,.4))"></div>
+      </div>
+      <div class="card" data-color="lavender">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=640&h=400&fit=crop&auto=format" alt="Repeat arrows symbolizing schedule patterns" loading="lazy"/><div class="card-img-overlay" style="background:linear-gradient(to bottom,rgba(167,139,250,.22) 0%,rgba(167,139,250,.06) 50%,rgba(247,245,255,.85) 100%)"></div><div class="step-chip" style="color:#A78BFA">Step 02</div></div>
+        <div class="card-body"><div class="card-header"><div class="card-icon" style="background:#f3efff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div><div><p class="card-title">Choose a Repeat Pattern</p><p class="card-title-en" style="color:#A78BFA">One-time, daily, weekly, monthly, yearly</p></div></div><p class="card-desc">Pick from five flexible repeat types. Set custom weekdays for weekly reminders, or pick the Nth weekday of every month — flexible enough for anything.</p></div>
+        <div class="card-accent-line" style="background:linear-gradient(90deg,#A78BFA,rgba(167,139,250,.4))"></div>
+      </div>
+      <div class="card" data-color="indigo">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1508963493744-76fce69379c0?w=640&h=400&fit=crop&auto=format" alt="Person relaxing with phone, notification received" loading="lazy"/><div class="card-img-overlay" style="background:linear-gradient(to bottom,rgba(139,133,255,.22) 0%,rgba(139,133,255,.06) 50%,rgba(247,245,255,.85) 100%)"></div><div class="step-chip" style="color:#8B85FF">Step 03</div></div>
+        <div class="card-body"><div class="card-header"><div class="card-icon" style="background:#eeeaff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8B85FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div><div><p class="card-title">Get Notified &amp; Snooze</p><p class="card-title-en" style="color:#8B85FF">You're in control</p></div></div><p class="card-desc">When it's time, you'll get a local notification. Can't deal with it right now? Tap Snooze and pick a custom delay — 5, 10, 30 minutes, whatever fits.</p></div>
+        <div class="card-accent-line" style="background:linear-gradient(90deg,#8B85FF,rgba(139,133,255,.4))"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <blockquote>"A gentle nudge at the right moment —<br/>so you can focus on what matters."</blockquote>
+  <div class="quote-attr"><svg width="22" height="22" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="q-lg" x1="26" y1="86" x2="76" y2="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6C63FF"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient></defs><rect x="42" y="10" width="16" height="30" rx="7" fill="url(#q-lg)"/><path d="M22 52 A28 28 0 0 1 78 52 L78 72 Q50 78 22 72 Z" fill="url(#q-lg)"/><circle cx="50" cy="86" r="8" fill="url(#q-lg)"/></svg>MemoNudge · Set. Remind. Done.</div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-row"><svg width="34" height="34" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="f-lg" x1="26" y1="86" x2="76" y2="14" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6C63FF"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient></defs><rect x="42" y="10" width="16" height="30" rx="7" fill="url(#f-lg)"/><path d="M22 52 A28 28 0 0 1 78 52 L78 72 Q50 78 22 72 Z" fill="url(#f-lg)"/><circle cx="50" cy="86" r="8" fill="url(#f-lg)"/></svg><span class="footer-brand-name">MemoNudge</span></div>
+        <p class="footer-brand-desc">A simple, private reminder app. All your data stays on your device — no accounts, no servers.</p>
+        <a href="mailto:jinh14050@gmail.com" class="footer-email"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>jinh14050@gmail.com</a>
+      </div>
+      <div class="footer-col"><h4>Legal</h4><a href="https://jinh14050.github.io/MemoNudge/privacy-policy.html">Privacy Policy</a><a href="https://jinh14050.github.io/MemoNudge/terms.html">Terms of Use</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MemoNudge. All rights reserved.</p>
+      <div class="footer-links"><a href="https://jinh14050.github.io/MemoNudge/privacy-policy.html">Privacy Policy</a><span class="sep">·</span><a href="https://jinh14050.github.io/MemoNudge/terms.html">Terms of Use</a><span class="sep">·</span><a href="mailto:jinh14050@gmail.com" class="accent">jinh14050@gmail.com</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
