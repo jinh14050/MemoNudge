@@ -22,7 +22,8 @@
 
 <ul>
   <li>Download and use our mobile application (<strong>MemoNudge</strong>), or any other application of ours that links to this Privacy Notice</li>
-  <li>Use MemoNudge. MemoNudge is a simple reminder app that allows users to create one-time, daily, weekly, monthly, and yearly reminders, with customizable snooze intervals. All reminder data is stored locally on your device. The app uses anonymous Firebase Analytics for statistical purposes and does not display any third-party ads.</li>
+  <!-- ✅ 改动 1：App 描述里补充通知机制 -->
+  <li>Use MemoNudge. MemoNudge is a simple reminder app that allows users to create one-time, daily, weekly, monthly, and yearly reminders, with customizable snooze intervals. All reminder data is stored locally on your device, and reminders are delivered via local notifications on your device. The app uses anonymous Firebase Analytics for statistical purposes and does not display any third-party ads.</li>
   <li>Engage with us in other related ways, including any marketing or events</li>
 </ul>
 
@@ -79,13 +80,16 @@
 <h3>Information automatically collected</h3>
 <p><em><strong>In Short:</strong> Some information — such as your Internet Protocol (IP) address and/or device characteristics — is collected automatically when you use our Services (via third-party analytics).</em></p>
 
-<p>We automatically collect certain information when you use the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, device characteristics, operating system, language preferences, country, location, and how you interact with the Services. This information is collected by third-party analytics services (Firebase Analytics) and is used to maintain security, improve the Services, and for internal analytics. <strong>We do not operate our own servers; all user-created content (reminders, notes, etc.) remains stored only on your own device.</strong></p>
+<!-- ✅ 改动 2：明确是 Firebase Analytics 收集，而不是“我们” -->
+<p>Certain information is automatically collected by third-party analytics services (Firebase Analytics) when you use the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, device characteristics, operating system, language preferences, country, location, and how you interact with the Services. This information is used to maintain security, improve the Services, and for internal analytics. <strong>We do not operate our own servers; all user-created content (reminders, notes, etc.) remains stored only on your own device.</strong></p>
 
-<p>The information we collect includes:</p>
+<p>The information collected includes:</p>
 <ul>
   <li><em>Log and Usage Data.</em> Log and usage data is service-related, diagnostic, and performance information automatically collected by third-party services (Firebase Analytics) when you access or use our Services. This may include your IP address, device information, operating system, and information about your activity in the Services (such as feature usage, app opens, and crash reports).</li>
-  <li><em>Device Data.</em> We collect device data such as information about your device (model, operating system, IP address) via Firebase Analytics.</li>
-  <li><em>Location Data.</em> We collect approximate location data based on your IP address through Firebase Analytics. You may opt out by disabling location permissions on your device.</li>
+  <!-- ✅ 改动 3：Device Data 主语改成 Firebase Analytics -->
+  <li><em>Device Data.</em> Firebase Analytics collects device data such as information about your device (model, operating system, IP address).</li>
+  <!-- ✅ 改动 4：Location Data 主语也改成 Firebase Analytics -->
+  <li><em>Location Data.</em> Firebase Analytics collects approximate location data based on your IP address. You may opt out by disabling location permissions on your device.</li>
 </ul>
 
 <h3>Google API</h3>
@@ -142,7 +146,10 @@
 <h2 id="inforetain">6. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
 <p><em><strong>In Short:</strong> We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.</em></p>
 
-<p>We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). Analytics data collected via Firebase is retained in accordance with Google's data retention policies. User-created content stored locally on your device is not accessible to us; you may delete it at any time by using the App.</p>
+<p>We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). Analytics data collected via Firebase is retained in accordance with Google's data retention policies.</p>
+
+<!-- ✅ 改动 5：补充 MemoNudge 本地数据说明 -->
+<p>For MemoNudge specifically, all user-created content — including reminders, tags, and settings — is stored locally on your device and is not accessible to us. You may delete this content at any time by using the App, or by uninstalling the App, which will remove all locally stored data.</p>
 
 <h2 id="infosafe">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
 <p><em><strong>In Short:</strong> We aim to protect your personal information through a system of organizational and technical security measures.</em></p>
